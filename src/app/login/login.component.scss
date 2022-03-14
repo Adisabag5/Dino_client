@@ -1,0 +1,35 @@
+.container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.login-form-container{
+    min-height: 300px;
+    height: 40%;
+    width: 30%;
+    min-width: 200px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    border: 1px solid lightgray;
+    border-radius: 8px;
+
+
+
+}
+
+.header, .content{
+    width: 100%;
+    text-align: center;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

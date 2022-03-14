@@ -1,0 +1,32 @@
+<div class="container">
+    <mat-expansion-panel>
+
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Post something...
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <form class="user-input-form">
+        
+                <quill-editor   
+                        class="content-editor" 
+                        [placeholder]="''"
+                        [modules]="QuillConfiguration"
+                        [styles]="{'min-height': '120px'}"
+                        [formControl]="userInput"> 
+                </quill-editor>
+        
+                <button mat-raised-button 
+                        color="primary" 
+                        (click)="onSubmit()">
+                        Post
+                </button>
+    
+        </form>
+
+    </mat-expansion-panel>
+    
+   
+</div>
+ 

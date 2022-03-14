@@ -1,0 +1,24 @@
+.container{
+    padding: 1%;
+    width: 96%;
+    height: 98%;
+    border: 1px solid lightgray;
+    margin: 0 auto;
+}
+
+mat-card-content{
+    width: 90%;
+    height: 90%;
+    padding: 2%;
+    min-height: 100px;
+    margin: 0 auto;
+}
+
+mat-expansion-panel{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.comments{
+    border: 1px solid lightgray;
+}

@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="login-form-container">
+        <div class="header">
+          <h1>Welcome</h1>
+      </div>
+
+      <div class="content">
+
+          <mat-button-toggle-group #group="matButtonToggleGroup">
+              <mat-button-toggle value="login" aria-label="Sign in">Login</mat-button-toggle>
+              <mat-button-toggle value="register" aria-label="Sign up">Register</mat-button-toggle>
+          </mat-button-toggle-group>
+
+          <form class="login-form">
+              <mat-form-field  appearance="outline">
+                <mat-label>Username</mat-label>
+                <input matInput id="username" type="text" [formControl]="username" placeholder="John_Doe">
+                <mat-error *ngIf="!username.hasError('required')">
+                  Please enter a valid email address
+                </mat-error>
+                <mat-error *ngIf="username.hasError('required')">
+                  Username is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
+          </form>
+          <button mat-raised-button color="accent" (click)="onSubmit((group.value == 'register')? 'register' : 'login')">Submit</button>
+          
+      </div>
+    </div>
+    
+
+    
+
+</div>

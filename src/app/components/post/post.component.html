@@ -1,0 +1,33 @@
+<!-- <div class="container">
+    <div class="post-content">
+        <app-content [contentData]="contentData"></app-content>
+    </div>
+    <div class="create-comment">
+        <app-text-line-editor [post_id]="contentData?.id? contentData.id : 0"></app-text-line-editor>
+    </div>
+    <div class="comments">
+        <app-comment *ngFor="let comment of comments" [commentData]="comment"></app-comment>
+    </div>
+</div> -->
+
+<mat-card class="container-card">
+
+    <mat-card-content>
+        <app-content [contentData]="contentData"></app-content>
+    </mat-card-content>
+
+    <mat-divider inset></mat-divider>
+
+    <mat-card-actions>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Comments
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-comment *ngFor="let comment of comments" [commentData]="comment"></app-comment>
+            <app-text-line-editor [post_id]="contentData?.id? contentData.id : 0"></app-text-line-editor>
+        </mat-expansion-panel>
+    </mat-card-actions>
+</mat-card>
+

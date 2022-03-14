@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<div class="body">
+    <div class="create-post">
+        <app-text-line-editor [post_id]="0"></app-text-line-editor>
+    </div>
+    
+    <div class="posts-container">
+        <app-post *ngFor="let post of postList" [postData]="post"> </app-post>
+    </div>
+</div>
+
+

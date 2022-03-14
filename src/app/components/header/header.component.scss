@@ -1,0 +1,28 @@
+.container{
+    background: blue;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    // justify-content: space-between;
+    align-content: center;
+
+    
+}
+
+.headline{
+    width: 60%;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        height: 70%;
+        margin: 0;
+        text-align: center;
+    }
+}

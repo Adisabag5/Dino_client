@@ -1,0 +1,13 @@
+<div class="container">
+
+    <div class="user_data">
+        <p id="username">@ {{ contentData?.username? contentData.username : '-' }}</p>
+        <p id="date">{{ contentData?.date? contentData.date : '' }}</p>
+    </div>
+
+    <div 
+        class="content" 
+        [innerHtml]="_returnHtmlFromRichText(contentData.content)">
+    </div>
+
+</div>
